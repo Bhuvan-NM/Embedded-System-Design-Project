@@ -5,7 +5,7 @@
 # 1 "<command line>" 1
 # 1 "<built-in>" 2
 # 1 "src/main.c" 2
-# 31 "src/main.c"
+# 22 "src/main.c"
 # 1 "./inc\\stm32f439xx.h" 1
 # 85 "./inc\\stm32f439xx.h"
  typedef enum
@@ -124,8 +124,8 @@
 
 
 
-# 1 "C:\\Keil_v5\\ARM\\ARMCLANG\\bin\\..\\include\\stdint.h" 1 3
-# 56 "C:\\Keil_v5\\ARM\\ARMCLANG\\bin\\..\\include\\stdint.h" 3
+# 1 "C:\\Users\\bhuva\\AppData\\Local\\Keil_v5\\ARM\\ARMCLANG\\bin\\..\\include\\stdint.h" 1 3
+# 56 "C:\\Users\\bhuva\\AppData\\Local\\Keil_v5\\ARM\\ARMCLANG\\bin\\..\\include\\stdint.h" 3
 typedef signed char int8_t;
 typedef signed short int int16_t;
 typedef signed int int32_t;
@@ -1967,12 +1967,12 @@ extern void SystemCoreClockUpdate(void);
    volatile uint32_t HCDMA;
    uint32_t Reserved[2];
  } USB_OTG_HostChannelTypeDef;
-# 32 "src/main.c" 2
+# 23 "src/main.c" 2
 
-# 1 "C:\\Keil_v5\\ARM\\ARMCLANG\\bin\\..\\include\\stdlib.h" 1 3
-# 71 "C:\\Keil_v5\\ARM\\ARMCLANG\\bin\\..\\include\\stdlib.h" 3
+# 1 "C:\\Users\\bhuva\\AppData\\Local\\Keil_v5\\ARM\\ARMCLANG\\bin\\..\\include\\stdlib.h" 1 3
+# 71 "C:\\Users\\bhuva\\AppData\\Local\\Keil_v5\\ARM\\ARMCLANG\\bin\\..\\include\\stdlib.h" 3
     typedef unsigned int size_t;
-# 89 "C:\\Keil_v5\\ARM\\ARMCLANG\\bin\\..\\include\\stdlib.h" 3
+# 89 "C:\\Users\\bhuva\\AppData\\Local\\Keil_v5\\ARM\\ARMCLANG\\bin\\..\\include\\stdlib.h" 3
     typedef unsigned int wchar_t;
 
 
@@ -1986,9 +1986,9 @@ typedef struct ldiv_t { long int quot, rem; } ldiv_t;
 
 
 typedef struct lldiv_t { long long quot, rem; } lldiv_t;
-# 139 "C:\\Keil_v5\\ARM\\ARMCLANG\\bin\\..\\include\\stdlib.h" 3
+# 139 "C:\\Users\\bhuva\\AppData\\Local\\Keil_v5\\ARM\\ARMCLANG\\bin\\..\\include\\stdlib.h" 3
 extern __attribute__((__nothrow__)) int __aeabi_MB_CUR_MAX(void);
-# 158 "C:\\Keil_v5\\ARM\\ARMCLANG\\bin\\..\\include\\stdlib.h" 3
+# 158 "C:\\Users\\bhuva\\AppData\\Local\\Keil_v5\\ARM\\ARMCLANG\\bin\\..\\include\\stdlib.h" 3
 extern __attribute__((__nothrow__)) double atof(const char * ) __attribute__((__nonnull__(1)));
 
 
@@ -2017,7 +2017,7 @@ extern __attribute__((__nothrow__)) long long atoll(const char * ) __attribute__
 
 
 extern __attribute__((__nothrow__)) double strtod(const char * __restrict , char ** __restrict ) __attribute__((__nonnull__(1)));
-# 206 "C:\\Keil_v5\\ARM\\ARMCLANG\\bin\\..\\include\\stdlib.h" 3
+# 206 "C:\\Users\\bhuva\\AppData\\Local\\Keil_v5\\ARM\\ARMCLANG\\bin\\..\\include\\stdlib.h" 3
 extern __attribute__((__nothrow__)) float strtof(const char * __restrict , char ** __restrict ) __attribute__((__nonnull__(1)));
 extern __attribute__((__nothrow__)) long double strtold(const char * __restrict , char ** __restrict ) __attribute__((__nonnull__(1)));
 
@@ -2026,10 +2026,10 @@ extern __attribute__((__nothrow__)) long double strtold(const char * __restrict 
 
 extern __attribute__((__nothrow__)) long int strtol(const char * __restrict ,
                         char ** __restrict , int ) __attribute__((__nonnull__(1)));
-# 243 "C:\\Keil_v5\\ARM\\ARMCLANG\\bin\\..\\include\\stdlib.h" 3
+# 243 "C:\\Users\\bhuva\\AppData\\Local\\Keil_v5\\ARM\\ARMCLANG\\bin\\..\\include\\stdlib.h" 3
 extern __attribute__((__nothrow__)) unsigned long int strtoul(const char * __restrict ,
                                        char ** __restrict , int ) __attribute__((__nonnull__(1)));
-# 275 "C:\\Keil_v5\\ARM\\ARMCLANG\\bin\\..\\include\\stdlib.h" 3
+# 275 "C:\\Users\\bhuva\\AppData\\Local\\Keil_v5\\ARM\\ARMCLANG\\bin\\..\\include\\stdlib.h" 3
 extern __attribute__((__nothrow__)) long long strtoll(const char * __restrict ,
                                   char ** __restrict , int )
                           __attribute__((__nonnull__(1)));
@@ -2049,9 +2049,9 @@ extern __attribute__((__nothrow__)) unsigned long long strtoull(const char * __r
 
 
 extern __attribute__((__nothrow__)) int rand(void);
-# 303 "C:\\Keil_v5\\ARM\\ARMCLANG\\bin\\..\\include\\stdlib.h" 3
+# 303 "C:\\Users\\bhuva\\AppData\\Local\\Keil_v5\\ARM\\ARMCLANG\\bin\\..\\include\\stdlib.h" 3
 extern __attribute__((__nothrow__)) void srand(unsigned int );
-# 313 "C:\\Keil_v5\\ARM\\ARMCLANG\\bin\\..\\include\\stdlib.h" 3
+# 313 "C:\\Users\\bhuva\\AppData\\Local\\Keil_v5\\ARM\\ARMCLANG\\bin\\..\\include\\stdlib.h" 3
 struct _rand_state { int __x[57]; };
 extern __attribute__((__nothrow__)) int _rand_r(struct _rand_state *);
 extern __attribute__((__nothrow__)) void _srand_r(struct _rand_state *, unsigned int);
@@ -2084,35 +2084,35 @@ extern __attribute__((__nothrow__)) void *malloc(size_t );
 
 
 extern __attribute__((__nothrow__)) void *realloc(void * , size_t );
-# 374 "C:\\Keil_v5\\ARM\\ARMCLANG\\bin\\..\\include\\stdlib.h" 3
+# 374 "C:\\Users\\bhuva\\AppData\\Local\\Keil_v5\\ARM\\ARMCLANG\\bin\\..\\include\\stdlib.h" 3
 typedef int (*__heapprt)(void *, char const *, ...);
 extern __attribute__((__nothrow__)) void __heapstats(int (* )(void * ,
                                            char const * , ...),
                         void * ) __attribute__((__nonnull__(1)));
-# 390 "C:\\Keil_v5\\ARM\\ARMCLANG\\bin\\..\\include\\stdlib.h" 3
+# 390 "C:\\Users\\bhuva\\AppData\\Local\\Keil_v5\\ARM\\ARMCLANG\\bin\\..\\include\\stdlib.h" 3
 extern __attribute__((__nothrow__)) int __heapvalid(int (* )(void * ,
                                            char const * , ...),
                        void * , int ) __attribute__((__nonnull__(1)));
-# 411 "C:\\Keil_v5\\ARM\\ARMCLANG\\bin\\..\\include\\stdlib.h" 3
+# 411 "C:\\Users\\bhuva\\AppData\\Local\\Keil_v5\\ARM\\ARMCLANG\\bin\\..\\include\\stdlib.h" 3
 extern __attribute__((__nothrow__)) __attribute__((__noreturn__)) void abort(void);
-# 422 "C:\\Keil_v5\\ARM\\ARMCLANG\\bin\\..\\include\\stdlib.h" 3
+# 422 "C:\\Users\\bhuva\\AppData\\Local\\Keil_v5\\ARM\\ARMCLANG\\bin\\..\\include\\stdlib.h" 3
 extern __attribute__((__nothrow__)) int atexit(void (* )(void)) __attribute__((__nonnull__(1)));
-# 444 "C:\\Keil_v5\\ARM\\ARMCLANG\\bin\\..\\include\\stdlib.h" 3
+# 444 "C:\\Users\\bhuva\\AppData\\Local\\Keil_v5\\ARM\\ARMCLANG\\bin\\..\\include\\stdlib.h" 3
 extern __attribute__((__nothrow__)) __attribute__((__noreturn__)) void exit(int );
-# 460 "C:\\Keil_v5\\ARM\\ARMCLANG\\bin\\..\\include\\stdlib.h" 3
+# 460 "C:\\Users\\bhuva\\AppData\\Local\\Keil_v5\\ARM\\ARMCLANG\\bin\\..\\include\\stdlib.h" 3
 extern __attribute__((__nothrow__)) __attribute__((__noreturn__)) void _Exit(int );
-# 471 "C:\\Keil_v5\\ARM\\ARMCLANG\\bin\\..\\include\\stdlib.h" 3
+# 471 "C:\\Users\\bhuva\\AppData\\Local\\Keil_v5\\ARM\\ARMCLANG\\bin\\..\\include\\stdlib.h" 3
 extern __attribute__((__nothrow__)) char *getenv(const char * ) __attribute__((__nonnull__(1)));
-# 484 "C:\\Keil_v5\\ARM\\ARMCLANG\\bin\\..\\include\\stdlib.h" 3
+# 484 "C:\\Users\\bhuva\\AppData\\Local\\Keil_v5\\ARM\\ARMCLANG\\bin\\..\\include\\stdlib.h" 3
 extern __attribute__((__nothrow__)) int system(const char * );
-# 497 "C:\\Keil_v5\\ARM\\ARMCLANG\\bin\\..\\include\\stdlib.h" 3
+# 497 "C:\\Users\\bhuva\\AppData\\Local\\Keil_v5\\ARM\\ARMCLANG\\bin\\..\\include\\stdlib.h" 3
 extern void *bsearch(const void * , const void * ,
               size_t , size_t ,
               int (* )(const void *, const void *)) __attribute__((__nonnull__(1,2,5)));
-# 532 "C:\\Keil_v5\\ARM\\ARMCLANG\\bin\\..\\include\\stdlib.h" 3
+# 532 "C:\\Users\\bhuva\\AppData\\Local\\Keil_v5\\ARM\\ARMCLANG\\bin\\..\\include\\stdlib.h" 3
 extern void qsort(void * , size_t , size_t ,
            int (* )(const void *, const void *)) __attribute__((__nonnull__(1,4)));
-# 560 "C:\\Keil_v5\\ARM\\ARMCLANG\\bin\\..\\include\\stdlib.h" 3
+# 560 "C:\\Users\\bhuva\\AppData\\Local\\Keil_v5\\ARM\\ARMCLANG\\bin\\..\\include\\stdlib.h" 3
 extern __attribute__((__nothrow__)) __attribute__((__const__)) int abs(int );
 
 
@@ -2121,15 +2121,15 @@ extern __attribute__((__nothrow__)) __attribute__((__const__)) int abs(int );
 
 
 extern __attribute__((__nothrow__)) __attribute__((__const__)) div_t div(int , int );
-# 579 "C:\\Keil_v5\\ARM\\ARMCLANG\\bin\\..\\include\\stdlib.h" 3
+# 579 "C:\\Users\\bhuva\\AppData\\Local\\Keil_v5\\ARM\\ARMCLANG\\bin\\..\\include\\stdlib.h" 3
 extern __attribute__((__nothrow__)) __attribute__((__const__)) long int labs(long int );
-# 589 "C:\\Keil_v5\\ARM\\ARMCLANG\\bin\\..\\include\\stdlib.h" 3
+# 589 "C:\\Users\\bhuva\\AppData\\Local\\Keil_v5\\ARM\\ARMCLANG\\bin\\..\\include\\stdlib.h" 3
 extern __attribute__((__nothrow__)) __attribute__((__const__)) ldiv_t ldiv(long int , long int );
-# 610 "C:\\Keil_v5\\ARM\\ARMCLANG\\bin\\..\\include\\stdlib.h" 3
+# 610 "C:\\Users\\bhuva\\AppData\\Local\\Keil_v5\\ARM\\ARMCLANG\\bin\\..\\include\\stdlib.h" 3
 extern __attribute__((__nothrow__)) __attribute__((__const__)) long long llabs(long long );
-# 620 "C:\\Keil_v5\\ARM\\ARMCLANG\\bin\\..\\include\\stdlib.h" 3
+# 620 "C:\\Users\\bhuva\\AppData\\Local\\Keil_v5\\ARM\\ARMCLANG\\bin\\..\\include\\stdlib.h" 3
 extern __attribute__((__nothrow__)) __attribute__((__const__)) lldiv_t lldiv(long long , long long );
-# 644 "C:\\Keil_v5\\ARM\\ARMCLANG\\bin\\..\\include\\stdlib.h" 3
+# 644 "C:\\Users\\bhuva\\AppData\\Local\\Keil_v5\\ARM\\ARMCLANG\\bin\\..\\include\\stdlib.h" 3
 typedef struct __sdiv32by16 { long quot, rem; } __sdiv32by16;
 typedef struct __udiv32by16 { unsigned long quot, rem; } __udiv32by16;
 
@@ -2158,20 +2158,20 @@ __attribute__((__value_in_regs__)) extern __attribute__((__nothrow__)) __attribu
 
 
 extern __attribute__((__nothrow__)) unsigned int __fp_status(unsigned int , unsigned int );
-# 705 "C:\\Keil_v5\\ARM\\ARMCLANG\\bin\\..\\include\\stdlib.h" 3
+# 705 "C:\\Users\\bhuva\\AppData\\Local\\Keil_v5\\ARM\\ARMCLANG\\bin\\..\\include\\stdlib.h" 3
 extern __attribute__((__nothrow__)) int mblen(const char * , size_t );
-# 720 "C:\\Keil_v5\\ARM\\ARMCLANG\\bin\\..\\include\\stdlib.h" 3
+# 720 "C:\\Users\\bhuva\\AppData\\Local\\Keil_v5\\ARM\\ARMCLANG\\bin\\..\\include\\stdlib.h" 3
 extern __attribute__((__nothrow__)) int mbtowc(wchar_t * __restrict ,
                    const char * __restrict , size_t );
-# 739 "C:\\Keil_v5\\ARM\\ARMCLANG\\bin\\..\\include\\stdlib.h" 3
+# 739 "C:\\Users\\bhuva\\AppData\\Local\\Keil_v5\\ARM\\ARMCLANG\\bin\\..\\include\\stdlib.h" 3
 extern __attribute__((__nothrow__)) int wctomb(char * , wchar_t );
-# 761 "C:\\Keil_v5\\ARM\\ARMCLANG\\bin\\..\\include\\stdlib.h" 3
+# 761 "C:\\Users\\bhuva\\AppData\\Local\\Keil_v5\\ARM\\ARMCLANG\\bin\\..\\include\\stdlib.h" 3
 extern __attribute__((__nothrow__)) size_t mbstowcs(wchar_t * __restrict ,
                       const char * __restrict , size_t ) __attribute__((__nonnull__(2)));
-# 779 "C:\\Keil_v5\\ARM\\ARMCLANG\\bin\\..\\include\\stdlib.h" 3
+# 779 "C:\\Users\\bhuva\\AppData\\Local\\Keil_v5\\ARM\\ARMCLANG\\bin\\..\\include\\stdlib.h" 3
 extern __attribute__((__nothrow__)) size_t wcstombs(char * __restrict ,
                       const wchar_t * __restrict , size_t ) __attribute__((__nonnull__(2)));
-# 798 "C:\\Keil_v5\\ARM\\ARMCLANG\\bin\\..\\include\\stdlib.h" 3
+# 798 "C:\\Users\\bhuva\\AppData\\Local\\Keil_v5\\ARM\\ARMCLANG\\bin\\..\\include\\stdlib.h" 3
 extern __attribute__((__nothrow__)) void __use_realtime_heap(void);
 extern __attribute__((__nothrow__)) void __use_realtime_division(void);
 extern __attribute__((__nothrow__)) void __use_two_region_memory(void);
@@ -2180,9 +2180,9 @@ extern __attribute__((__nothrow__)) void __use_no_heap_region(void);
 
 extern __attribute__((__nothrow__)) char const *__C_library_version_string(void);
 extern __attribute__((__nothrow__)) int __C_library_version_number(void);
-# 34 "src/main.c" 2
-# 1 "C:\\Keil_v5\\ARM\\ARMCLANG\\bin\\..\\include\\string.h" 1 3
-# 58 "C:\\Keil_v5\\ARM\\ARMCLANG\\bin\\..\\include\\string.h" 3
+# 25 "src/main.c" 2
+# 1 "C:\\Users\\bhuva\\AppData\\Local\\Keil_v5\\ARM\\ARMCLANG\\bin\\..\\include\\string.h" 1 3
+# 58 "C:\\Users\\bhuva\\AppData\\Local\\Keil_v5\\ARM\\ARMCLANG\\bin\\..\\include\\string.h" 3
 extern __attribute__((__nothrow__)) void *memcpy(void * __restrict ,
                     const void * __restrict , size_t ) __attribute__((__nonnull__(1,2)));
 
@@ -2193,7 +2193,7 @@ extern __attribute__((__nothrow__)) void *memcpy(void * __restrict ,
 
 extern __attribute__((__nothrow__)) void *memmove(void * ,
                     const void * , size_t ) __attribute__((__nonnull__(1,2)));
-# 77 "C:\\Keil_v5\\ARM\\ARMCLANG\\bin\\..\\include\\string.h" 3
+# 77 "C:\\Users\\bhuva\\AppData\\Local\\Keil_v5\\ARM\\ARMCLANG\\bin\\..\\include\\string.h" 3
 extern __attribute__((__nothrow__)) char *strcpy(char * __restrict , const char * __restrict ) __attribute__((__nonnull__(1,2)));
 
 
@@ -2202,7 +2202,7 @@ extern __attribute__((__nothrow__)) char *strcpy(char * __restrict , const char 
 
 
 extern __attribute__((__nothrow__)) char *strncpy(char * __restrict , const char * __restrict , size_t ) __attribute__((__nonnull__(1,2)));
-# 93 "C:\\Keil_v5\\ARM\\ARMCLANG\\bin\\..\\include\\string.h" 3
+# 93 "C:\\Users\\bhuva\\AppData\\Local\\Keil_v5\\ARM\\ARMCLANG\\bin\\..\\include\\string.h" 3
 extern __attribute__((__nothrow__)) char *strcat(char * __restrict , const char * __restrict ) __attribute__((__nonnull__(1,2)));
 
 
@@ -2211,7 +2211,7 @@ extern __attribute__((__nothrow__)) char *strcat(char * __restrict , const char 
 
 
 extern __attribute__((__nothrow__)) char *strncat(char * __restrict , const char * __restrict , size_t ) __attribute__((__nonnull__(1,2)));
-# 117 "C:\\Keil_v5\\ARM\\ARMCLANG\\bin\\..\\include\\string.h" 3
+# 117 "C:\\Users\\bhuva\\AppData\\Local\\Keil_v5\\ARM\\ARMCLANG\\bin\\..\\include\\string.h" 3
 extern __attribute__((__nothrow__)) int memcmp(const void * , const void * , size_t ) __attribute__((__nonnull__(1,2)));
 
 
@@ -2228,7 +2228,7 @@ extern __attribute__((__nothrow__)) int strcmp(const char * , const char * ) __a
 
 
 extern __attribute__((__nothrow__)) int strncmp(const char * , const char * , size_t ) __attribute__((__nonnull__(1,2)));
-# 141 "C:\\Keil_v5\\ARM\\ARMCLANG\\bin\\..\\include\\string.h" 3
+# 141 "C:\\Users\\bhuva\\AppData\\Local\\Keil_v5\\ARM\\ARMCLANG\\bin\\..\\include\\string.h" 3
 extern __attribute__((__nothrow__)) int strcasecmp(const char * , const char * ) __attribute__((__nonnull__(1,2)));
 
 
@@ -2238,28 +2238,28 @@ extern __attribute__((__nothrow__)) int strcasecmp(const char * , const char * )
 
 
 extern __attribute__((__nothrow__)) int strncasecmp(const char * , const char * , size_t ) __attribute__((__nonnull__(1,2)));
-# 158 "C:\\Keil_v5\\ARM\\ARMCLANG\\bin\\..\\include\\string.h" 3
+# 158 "C:\\Users\\bhuva\\AppData\\Local\\Keil_v5\\ARM\\ARMCLANG\\bin\\..\\include\\string.h" 3
 extern __attribute__((__nothrow__)) int strcoll(const char * , const char * ) __attribute__((__nonnull__(1,2)));
-# 169 "C:\\Keil_v5\\ARM\\ARMCLANG\\bin\\..\\include\\string.h" 3
+# 169 "C:\\Users\\bhuva\\AppData\\Local\\Keil_v5\\ARM\\ARMCLANG\\bin\\..\\include\\string.h" 3
 extern __attribute__((__nothrow__)) size_t strxfrm(char * __restrict , const char * __restrict , size_t ) __attribute__((__nonnull__(2)));
-# 193 "C:\\Keil_v5\\ARM\\ARMCLANG\\bin\\..\\include\\string.h" 3
+# 193 "C:\\Users\\bhuva\\AppData\\Local\\Keil_v5\\ARM\\ARMCLANG\\bin\\..\\include\\string.h" 3
 extern __attribute__((__nothrow__)) void *memchr(const void * , int , size_t ) __attribute__((__nonnull__(1)));
-# 209 "C:\\Keil_v5\\ARM\\ARMCLANG\\bin\\..\\include\\string.h" 3
+# 209 "C:\\Users\\bhuva\\AppData\\Local\\Keil_v5\\ARM\\ARMCLANG\\bin\\..\\include\\string.h" 3
 extern __attribute__((__nothrow__)) char *strchr(const char * , int ) __attribute__((__nonnull__(1)));
-# 218 "C:\\Keil_v5\\ARM\\ARMCLANG\\bin\\..\\include\\string.h" 3
+# 218 "C:\\Users\\bhuva\\AppData\\Local\\Keil_v5\\ARM\\ARMCLANG\\bin\\..\\include\\string.h" 3
 extern __attribute__((__nothrow__)) size_t strcspn(const char * , const char * ) __attribute__((__nonnull__(1,2)));
-# 232 "C:\\Keil_v5\\ARM\\ARMCLANG\\bin\\..\\include\\string.h" 3
+# 232 "C:\\Users\\bhuva\\AppData\\Local\\Keil_v5\\ARM\\ARMCLANG\\bin\\..\\include\\string.h" 3
 extern __attribute__((__nothrow__)) char *strpbrk(const char * , const char * ) __attribute__((__nonnull__(1,2)));
-# 247 "C:\\Keil_v5\\ARM\\ARMCLANG\\bin\\..\\include\\string.h" 3
+# 247 "C:\\Users\\bhuva\\AppData\\Local\\Keil_v5\\ARM\\ARMCLANG\\bin\\..\\include\\string.h" 3
 extern __attribute__((__nothrow__)) char *strrchr(const char * , int ) __attribute__((__nonnull__(1)));
-# 257 "C:\\Keil_v5\\ARM\\ARMCLANG\\bin\\..\\include\\string.h" 3
+# 257 "C:\\Users\\bhuva\\AppData\\Local\\Keil_v5\\ARM\\ARMCLANG\\bin\\..\\include\\string.h" 3
 extern __attribute__((__nothrow__)) size_t strspn(const char * , const char * ) __attribute__((__nonnull__(1,2)));
-# 270 "C:\\Keil_v5\\ARM\\ARMCLANG\\bin\\..\\include\\string.h" 3
+# 270 "C:\\Users\\bhuva\\AppData\\Local\\Keil_v5\\ARM\\ARMCLANG\\bin\\..\\include\\string.h" 3
 extern __attribute__((__nothrow__)) char *strstr(const char * , const char * ) __attribute__((__nonnull__(1,2)));
-# 280 "C:\\Keil_v5\\ARM\\ARMCLANG\\bin\\..\\include\\string.h" 3
+# 280 "C:\\Users\\bhuva\\AppData\\Local\\Keil_v5\\ARM\\ARMCLANG\\bin\\..\\include\\string.h" 3
 extern __attribute__((__nothrow__)) char *strtok(char * __restrict , const char * __restrict ) __attribute__((__nonnull__(2)));
 extern __attribute__((__nothrow__)) char *_strtok_r(char * , const char * , char ** ) __attribute__((__nonnull__(2,3)));
-# 321 "C:\\Keil_v5\\ARM\\ARMCLANG\\bin\\..\\include\\string.h" 3
+# 321 "C:\\Users\\bhuva\\AppData\\Local\\Keil_v5\\ARM\\ARMCLANG\\bin\\..\\include\\string.h" 3
 extern __attribute__((__nothrow__)) void *memset(void * , int , size_t ) __attribute__((__nonnull__(1)));
 
 
@@ -2289,9 +2289,9 @@ extern __attribute__((__nothrow__)) size_t strnlen(const char * , size_t ) __att
 
 
 extern __attribute__((__nothrow__)) size_t strlcpy(char * , const char * , size_t ) __attribute__((__nonnull__(1,2)));
-# 369 "C:\\Keil_v5\\ARM\\ARMCLANG\\bin\\..\\include\\string.h" 3
+# 369 "C:\\Users\\bhuva\\AppData\\Local\\Keil_v5\\ARM\\ARMCLANG\\bin\\..\\include\\string.h" 3
 extern __attribute__((__nothrow__)) size_t strlcat(char * , const char * , size_t ) __attribute__((__nonnull__(1,2)));
-# 395 "C:\\Keil_v5\\ARM\\ARMCLANG\\bin\\..\\include\\string.h" 3
+# 395 "C:\\Users\\bhuva\\AppData\\Local\\Keil_v5\\ARM\\ARMCLANG\\bin\\..\\include\\string.h" 3
 extern __attribute__((__nothrow__)) void _membitcpybl(void * , const void * , int , int , size_t ) __attribute__((__nonnull__(1,2)));
 extern __attribute__((__nothrow__)) void _membitcpybb(void * , const void * , int , int , size_t ) __attribute__((__nonnull__(1,2)));
 extern __attribute__((__nothrow__)) void _membitcpyhl(void * , const void * , int , int , size_t ) __attribute__((__nonnull__(1,2)));
@@ -2304,16 +2304,337 @@ extern __attribute__((__nothrow__)) void _membitmovehl(void * , const void * , i
 extern __attribute__((__nothrow__)) void _membitmovehb(void * , const void * , int , int , size_t ) __attribute__((__nonnull__(1,2)));
 extern __attribute__((__nothrow__)) void _membitmovewl(void * , const void * , int , int , size_t ) __attribute__((__nonnull__(1,2)));
 extern __attribute__((__nothrow__)) void _membitmovewb(void * , const void * , int , int , size_t ) __attribute__((__nonnull__(1,2)));
-# 35 "src/main.c" 2
-# 79 "src/main.c"
-static volatile uint8_t currentMode = 100;
-static volatile uint16_t currentFlashCount = 0;
+# 26 "src/main.c" 2
+# 1 "C:\\Users\\bhuva\\AppData\\Local\\Keil_v5\\ARM\\ARMCLANG\\bin\\..\\include\\stdio.h" 1 3
+# 68 "C:\\Users\\bhuva\\AppData\\Local\\Keil_v5\\ARM\\ARMCLANG\\bin\\..\\include\\stdio.h" 3
+    typedef __builtin_va_list __va_list;
+# 87 "C:\\Users\\bhuva\\AppData\\Local\\Keil_v5\\ARM\\ARMCLANG\\bin\\..\\include\\stdio.h" 3
+typedef struct __fpos_t_struct {
+    unsigned long long int __pos;
 
-static volatile uint8_t pendingMode = 100;
-static volatile uint16_t pendingFlashCount = 0;
-static volatile uint8_t pendingUpdate = 0;
 
-static volatile uint8_t flashState = 0;
+
+
+
+    struct {
+        unsigned int __state1, __state2;
+    } __mbstate;
+} fpos_t;
+# 108 "C:\\Users\\bhuva\\AppData\\Local\\Keil_v5\\ARM\\ARMCLANG\\bin\\..\\include\\stdio.h" 3
+typedef struct __FILE FILE;
+# 119 "C:\\Users\\bhuva\\AppData\\Local\\Keil_v5\\ARM\\ARMCLANG\\bin\\..\\include\\stdio.h" 3
+struct __FILE {
+    union {
+        long __FILE_alignment;
+
+
+
+        char __FILE_size[84];
+
+    } __FILE_opaque;
+};
+# 138 "C:\\Users\\bhuva\\AppData\\Local\\Keil_v5\\ARM\\ARMCLANG\\bin\\..\\include\\stdio.h" 3
+extern FILE __stdin, __stdout, __stderr;
+extern FILE *__aeabi_stdin, *__aeabi_stdout, *__aeabi_stderr;
+# 224 "C:\\Users\\bhuva\\AppData\\Local\\Keil_v5\\ARM\\ARMCLANG\\bin\\..\\include\\stdio.h" 3
+extern __attribute__((__nothrow__)) int remove(const char * ) __attribute__((__nonnull__(1)));
+
+
+
+
+
+
+
+extern __attribute__((__nothrow__)) int rename(const char * , const char * ) __attribute__((__nonnull__(1,2)));
+# 243 "C:\\Users\\bhuva\\AppData\\Local\\Keil_v5\\ARM\\ARMCLANG\\bin\\..\\include\\stdio.h" 3
+extern __attribute__((__nothrow__)) FILE *tmpfile(void);
+
+
+
+
+
+
+extern __attribute__((__nothrow__)) char *tmpnam(char * );
+# 265 "C:\\Users\\bhuva\\AppData\\Local\\Keil_v5\\ARM\\ARMCLANG\\bin\\..\\include\\stdio.h" 3
+extern __attribute__((__nothrow__)) int fclose(FILE * ) __attribute__((__nonnull__(1)));
+# 275 "C:\\Users\\bhuva\\AppData\\Local\\Keil_v5\\ARM\\ARMCLANG\\bin\\..\\include\\stdio.h" 3
+extern __attribute__((__nothrow__)) int fflush(FILE * );
+# 285 "C:\\Users\\bhuva\\AppData\\Local\\Keil_v5\\ARM\\ARMCLANG\\bin\\..\\include\\stdio.h" 3
+extern __attribute__((__nothrow__)) FILE *fopen(const char * __restrict ,
+                           const char * __restrict ) __attribute__((__nonnull__(1,2)));
+# 329 "C:\\Users\\bhuva\\AppData\\Local\\Keil_v5\\ARM\\ARMCLANG\\bin\\..\\include\\stdio.h" 3
+extern __attribute__((__nothrow__)) FILE *freopen(const char * __restrict ,
+                    const char * __restrict ,
+                    FILE * __restrict ) __attribute__((__nonnull__(2,3)));
+# 342 "C:\\Users\\bhuva\\AppData\\Local\\Keil_v5\\ARM\\ARMCLANG\\bin\\..\\include\\stdio.h" 3
+extern __attribute__((__nothrow__)) void setbuf(FILE * __restrict ,
+                    char * __restrict ) __attribute__((__nonnull__(1)));
+
+
+
+
+
+
+extern __attribute__((__nothrow__)) int setvbuf(FILE * __restrict ,
+                   char * __restrict ,
+                   int , size_t ) __attribute__((__nonnull__(1)));
+# 370 "C:\\Users\\bhuva\\AppData\\Local\\Keil_v5\\ARM\\ARMCLANG\\bin\\..\\include\\stdio.h" 3
+#pragma __printf_args
+extern __attribute__((__nothrow__)) int fprintf(FILE * __restrict ,
+                    const char * __restrict , ...) __attribute__((__nonnull__(1,2)));
+# 393 "C:\\Users\\bhuva\\AppData\\Local\\Keil_v5\\ARM\\ARMCLANG\\bin\\..\\include\\stdio.h" 3
+#pragma __printf_args
+extern __attribute__((__nothrow__)) int _fprintf(FILE * __restrict ,
+                     const char * __restrict , ...) __attribute__((__nonnull__(1,2)));
+
+
+
+
+
+#pragma __printf_args
+extern __attribute__((__nothrow__)) int printf(const char * __restrict , ...) __attribute__((__nonnull__(1)));
+
+
+
+
+
+
+#pragma __printf_args
+extern __attribute__((__nothrow__)) int _printf(const char * __restrict , ...) __attribute__((__nonnull__(1)));
+
+
+
+
+
+#pragma __printf_args
+extern __attribute__((__nothrow__)) int sprintf(char * __restrict , const char * __restrict , ...) __attribute__((__nonnull__(1,2)));
+
+
+
+
+
+
+
+
+#pragma __printf_args
+extern __attribute__((__nothrow__)) int _sprintf(char * __restrict , const char * __restrict , ...) __attribute__((__nonnull__(1,2)));
+
+
+
+
+
+
+#pragma __printf_args
+extern __attribute__((__nothrow__)) int __ARM_snprintf(char * __restrict , size_t ,
+                     const char * __restrict , ...) __attribute__((__nonnull__(3)));
+
+
+#pragma __printf_args
+extern __attribute__((__nothrow__)) int snprintf(char * __restrict , size_t ,
+                     const char * __restrict , ...) __attribute__((__nonnull__(3)));
+# 460 "C:\\Users\\bhuva\\AppData\\Local\\Keil_v5\\ARM\\ARMCLANG\\bin\\..\\include\\stdio.h" 3
+#pragma __printf_args
+extern __attribute__((__nothrow__)) int _snprintf(char * __restrict , size_t ,
+                      const char * __restrict , ...) __attribute__((__nonnull__(3)));
+
+
+
+
+
+#pragma __scanf_args
+extern __attribute__((__nothrow__)) int fscanf(FILE * __restrict ,
+                    const char * __restrict , ...) __attribute__((__nonnull__(1,2)));
+# 503 "C:\\Users\\bhuva\\AppData\\Local\\Keil_v5\\ARM\\ARMCLANG\\bin\\..\\include\\stdio.h" 3
+#pragma __scanf_args
+extern __attribute__((__nothrow__)) int _fscanf(FILE * __restrict ,
+                     const char * __restrict , ...) __attribute__((__nonnull__(1,2)));
+
+
+
+
+
+#pragma __scanf_args
+extern __attribute__((__nothrow__)) int scanf(const char * __restrict , ...) __attribute__((__nonnull__(1)));
+
+
+
+
+
+
+
+
+#pragma __scanf_args
+extern __attribute__((__nothrow__)) int _scanf(const char * __restrict , ...) __attribute__((__nonnull__(1)));
+
+
+
+
+
+#pragma __scanf_args
+extern __attribute__((__nothrow__)) int sscanf(const char * __restrict ,
+                    const char * __restrict , ...) __attribute__((__nonnull__(1,2)));
+# 541 "C:\\Users\\bhuva\\AppData\\Local\\Keil_v5\\ARM\\ARMCLANG\\bin\\..\\include\\stdio.h" 3
+#pragma __scanf_args
+extern __attribute__((__nothrow__)) int _sscanf(const char * __restrict ,
+                     const char * __restrict , ...) __attribute__((__nonnull__(1,2)));
+
+
+
+
+
+
+
+extern __attribute__((__nothrow__)) int vfscanf(FILE * __restrict , const char * __restrict , __va_list) __attribute__((__nonnull__(1,2)));
+extern __attribute__((__nothrow__)) int vscanf(const char * __restrict , __va_list) __attribute__((__nonnull__(1)));
+extern __attribute__((__nothrow__)) int vsscanf(const char * __restrict , const char * __restrict , __va_list) __attribute__((__nonnull__(1,2)));
+
+extern __attribute__((__nothrow__)) int _vfscanf(FILE * __restrict , const char * __restrict , __va_list) __attribute__((__nonnull__(1,2)));
+extern __attribute__((__nothrow__)) int _vscanf(const char * __restrict , __va_list) __attribute__((__nonnull__(1)));
+extern __attribute__((__nothrow__)) int _vsscanf(const char * __restrict , const char * __restrict , __va_list) __attribute__((__nonnull__(1,2)));
+extern __attribute__((__nothrow__)) int __ARM_vsscanf(const char * __restrict , const char * __restrict , __va_list) __attribute__((__nonnull__(1,2)));
+
+extern __attribute__((__nothrow__)) int vprintf(const char * __restrict , __va_list ) __attribute__((__nonnull__(1)));
+
+
+
+
+
+
+
+extern __attribute__((__nothrow__)) int _vprintf(const char * __restrict , __va_list ) __attribute__((__nonnull__(1)));
+
+
+
+
+
+extern __attribute__((__nothrow__)) int vfprintf(FILE * __restrict ,
+                    const char * __restrict , __va_list ) __attribute__((__nonnull__(1,2)));
+# 584 "C:\\Users\\bhuva\\AppData\\Local\\Keil_v5\\ARM\\ARMCLANG\\bin\\..\\include\\stdio.h" 3
+extern __attribute__((__nothrow__)) int vsprintf(char * __restrict ,
+                     const char * __restrict , __va_list ) __attribute__((__nonnull__(1,2)));
+# 594 "C:\\Users\\bhuva\\AppData\\Local\\Keil_v5\\ARM\\ARMCLANG\\bin\\..\\include\\stdio.h" 3
+extern __attribute__((__nothrow__)) int __ARM_vsnprintf(char * __restrict , size_t ,
+                     const char * __restrict , __va_list ) __attribute__((__nonnull__(3)));
+
+extern __attribute__((__nothrow__)) int vsnprintf(char * __restrict , size_t ,
+                     const char * __restrict , __va_list ) __attribute__((__nonnull__(3)));
+# 609 "C:\\Users\\bhuva\\AppData\\Local\\Keil_v5\\ARM\\ARMCLANG\\bin\\..\\include\\stdio.h" 3
+extern __attribute__((__nothrow__)) int _vsprintf(char * __restrict ,
+                      const char * __restrict , __va_list ) __attribute__((__nonnull__(1,2)));
+
+
+
+
+
+extern __attribute__((__nothrow__)) int _vfprintf(FILE * __restrict ,
+                     const char * __restrict , __va_list ) __attribute__((__nonnull__(1,2)));
+
+
+
+
+
+extern __attribute__((__nothrow__)) int _vsnprintf(char * __restrict , size_t ,
+                      const char * __restrict , __va_list ) __attribute__((__nonnull__(3)));
+# 635 "C:\\Users\\bhuva\\AppData\\Local\\Keil_v5\\ARM\\ARMCLANG\\bin\\..\\include\\stdio.h" 3
+#pragma __printf_args
+extern __attribute__((__nothrow__)) int __ARM_asprintf(char ** , const char * __restrict , ...) __attribute__((__nonnull__(2)));
+extern __attribute__((__nothrow__)) int __ARM_vasprintf(char ** , const char * __restrict , __va_list ) __attribute__((__nonnull__(2)));
+# 649 "C:\\Users\\bhuva\\AppData\\Local\\Keil_v5\\ARM\\ARMCLANG\\bin\\..\\include\\stdio.h" 3
+extern __attribute__((__nothrow__)) int fgetc(FILE * ) __attribute__((__nonnull__(1)));
+# 659 "C:\\Users\\bhuva\\AppData\\Local\\Keil_v5\\ARM\\ARMCLANG\\bin\\..\\include\\stdio.h" 3
+extern __attribute__((__nothrow__)) char *fgets(char * __restrict , int ,
+                    FILE * __restrict ) __attribute__((__nonnull__(1,3)));
+# 673 "C:\\Users\\bhuva\\AppData\\Local\\Keil_v5\\ARM\\ARMCLANG\\bin\\..\\include\\stdio.h" 3
+extern __attribute__((__nothrow__)) int fputc(int , FILE * ) __attribute__((__nonnull__(2)));
+# 683 "C:\\Users\\bhuva\\AppData\\Local\\Keil_v5\\ARM\\ARMCLANG\\bin\\..\\include\\stdio.h" 3
+extern __attribute__((__nothrow__)) int fputs(const char * __restrict , FILE * __restrict ) __attribute__((__nonnull__(1,2)));
+
+
+
+
+
+
+extern __attribute__((__nothrow__)) int getc(FILE * ) __attribute__((__nonnull__(1)));
+# 704 "C:\\Users\\bhuva\\AppData\\Local\\Keil_v5\\ARM\\ARMCLANG\\bin\\..\\include\\stdio.h" 3
+    extern __attribute__((__nothrow__)) int (getchar)(void);
+# 713 "C:\\Users\\bhuva\\AppData\\Local\\Keil_v5\\ARM\\ARMCLANG\\bin\\..\\include\\stdio.h" 3
+extern __attribute__((__nothrow__)) char *gets(char * ) __attribute__((__nonnull__(1)));
+# 725 "C:\\Users\\bhuva\\AppData\\Local\\Keil_v5\\ARM\\ARMCLANG\\bin\\..\\include\\stdio.h" 3
+extern __attribute__((__nothrow__)) int putc(int , FILE * ) __attribute__((__nonnull__(2)));
+# 737 "C:\\Users\\bhuva\\AppData\\Local\\Keil_v5\\ARM\\ARMCLANG\\bin\\..\\include\\stdio.h" 3
+    extern __attribute__((__nothrow__)) int (putchar)(int );
+
+
+
+
+
+
+extern __attribute__((__nothrow__)) int puts(const char * ) __attribute__((__nonnull__(1)));
+
+
+
+
+
+
+
+extern __attribute__((__nothrow__)) int ungetc(int , FILE * ) __attribute__((__nonnull__(2)));
+# 778 "C:\\Users\\bhuva\\AppData\\Local\\Keil_v5\\ARM\\ARMCLANG\\bin\\..\\include\\stdio.h" 3
+extern __attribute__((__nothrow__)) size_t fread(void * __restrict ,
+                    size_t , size_t , FILE * __restrict ) __attribute__((__nonnull__(1,4)));
+# 794 "C:\\Users\\bhuva\\AppData\\Local\\Keil_v5\\ARM\\ARMCLANG\\bin\\..\\include\\stdio.h" 3
+extern __attribute__((__nothrow__)) size_t __fread_bytes_avail(void * __restrict ,
+                    size_t , FILE * __restrict ) __attribute__((__nonnull__(1,3)));
+# 810 "C:\\Users\\bhuva\\AppData\\Local\\Keil_v5\\ARM\\ARMCLANG\\bin\\..\\include\\stdio.h" 3
+extern __attribute__((__nothrow__)) size_t fwrite(const void * __restrict ,
+                    size_t , size_t , FILE * __restrict ) __attribute__((__nonnull__(1,4)));
+# 822 "C:\\Users\\bhuva\\AppData\\Local\\Keil_v5\\ARM\\ARMCLANG\\bin\\..\\include\\stdio.h" 3
+extern __attribute__((__nothrow__)) int fgetpos(FILE * __restrict , fpos_t * __restrict ) __attribute__((__nonnull__(1,2)));
+# 833 "C:\\Users\\bhuva\\AppData\\Local\\Keil_v5\\ARM\\ARMCLANG\\bin\\..\\include\\stdio.h" 3
+extern __attribute__((__nothrow__)) int fseek(FILE * , long int , int ) __attribute__((__nonnull__(1)));
+# 850 "C:\\Users\\bhuva\\AppData\\Local\\Keil_v5\\ARM\\ARMCLANG\\bin\\..\\include\\stdio.h" 3
+extern __attribute__((__nothrow__)) int fsetpos(FILE * __restrict , const fpos_t * __restrict ) __attribute__((__nonnull__(1,2)));
+# 863 "C:\\Users\\bhuva\\AppData\\Local\\Keil_v5\\ARM\\ARMCLANG\\bin\\..\\include\\stdio.h" 3
+extern __attribute__((__nothrow__)) long int ftell(FILE * ) __attribute__((__nonnull__(1)));
+# 877 "C:\\Users\\bhuva\\AppData\\Local\\Keil_v5\\ARM\\ARMCLANG\\bin\\..\\include\\stdio.h" 3
+extern __attribute__((__nothrow__)) void rewind(FILE * ) __attribute__((__nonnull__(1)));
+# 886 "C:\\Users\\bhuva\\AppData\\Local\\Keil_v5\\ARM\\ARMCLANG\\bin\\..\\include\\stdio.h" 3
+extern __attribute__((__nothrow__)) void clearerr(FILE * ) __attribute__((__nonnull__(1)));
+
+
+
+
+
+
+
+extern __attribute__((__nothrow__)) int feof(FILE * ) __attribute__((__nonnull__(1)));
+
+
+
+
+extern __attribute__((__nothrow__)) int ferror(FILE * ) __attribute__((__nonnull__(1)));
+
+
+
+
+extern __attribute__((__nothrow__)) void perror(const char * );
+# 917 "C:\\Users\\bhuva\\AppData\\Local\\Keil_v5\\ARM\\ARMCLANG\\bin\\..\\include\\stdio.h" 3
+extern __attribute__((__nothrow__)) int _fisatty(FILE * ) __attribute__((__nonnull__(1)));
+
+
+
+extern __attribute__((__nothrow__)) void __use_no_semihosting_swi(void);
+extern __attribute__((__nothrow__)) void __use_no_semihosting(void);
+# 27 "src/main.c" 2
+# 75 "src/main.c"
+static volatile uint8_t lightOutput = 0;
+static volatile uint8_t heaterOutput = 0;
+static volatile uint8_t coolingOutput = 0;
+static volatile uint8_t fanOutput = 0;
+
+static volatile uint32_t msTicks = 0;
+static volatile uint32_t uartClimateOverrideUntil = 0;
+
+static volatile float currentTemperature = 0.0f;
 
 
 void delayCycles(volatile uint32_t count)
@@ -2323,6 +2644,7 @@ void delayCycles(volatile uint32_t count)
         __builtin_arm_nop();
     }
 }
+
 
 
 void RCC_init(void)
@@ -2356,24 +2678,45 @@ void initOutputPin(GPIO_TypeDef *port, uint8_t pin)
     port->ODR &= ~(1U << pin);
 }
 
-void ledsInit(void)
+void initInputPin(GPIO_TypeDef *port, uint8_t pin)
 {
-    initOutputPin(((GPIO_TypeDef *) ((0x40000000U + 0x00020000U) + 0x0000U)), 3);
-    initOutputPin(((GPIO_TypeDef *) ((0x40000000U + 0x00020000U) + 0x0000U)), 8);
-    initOutputPin(((GPIO_TypeDef *) ((0x40000000U + 0x00020000U) + 0x0000U)), 9);
-    initOutputPin(((GPIO_TypeDef *) ((0x40000000U + 0x00020000U) + 0x0000U)), 10);
-    initOutputPin(((GPIO_TypeDef *) ((0x40000000U + 0x00020000U) + 0x0400U)), 0);
-    initOutputPin(((GPIO_TypeDef *) ((0x40000000U + 0x00020000U) + 0x0400U)), 1);
-    initOutputPin(((GPIO_TypeDef *) ((0x40000000U + 0x00020000U) + 0x0400U)), 8);
-    initOutputPin(((GPIO_TypeDef *) ((0x40000000U + 0x00020000U) + 0x1400U)), 8);
+
+    port->MODER &= ~(0x3U << (pin * 2U));
+
+
+    port->PUPDR &= ~(0x3U << (pin * 2U));
 }
 
-void ledOn(GPIO_TypeDef *port, uint8_t pin)
+void initAnalogPin(GPIO_TypeDef *port, uint8_t pin)
+{
+
+    port->MODER &= ~(0x3U << (pin * 2U));
+    port->MODER |= (0x3U << (pin * 2U));
+
+
+    port->PUPDR &= ~(0x3U << (pin * 2U));
+}
+
+void GPIO_init(void)
+{
+    initInputPin(((GPIO_TypeDef *) ((0x40000000U + 0x00020000U) + 0x0000U)), 10);
+    initInputPin(((GPIO_TypeDef *) ((0x40000000U + 0x00020000U) + 0x0000U)), 8);
+    initInputPin(((GPIO_TypeDef *) ((0x40000000U + 0x00020000U) + 0x0400U)), 0);
+
+    initOutputPin(((GPIO_TypeDef *) ((0x40000000U + 0x00020000U) + 0x1400U)), 8);
+    initOutputPin(((GPIO_TypeDef *) ((0x40000000U + 0x00020000U) + 0x0400U)), 8);
+    initOutputPin(((GPIO_TypeDef *) ((0x40000000U + 0x00020000U) + 0x0400U)), 1);
+    initOutputPin(((GPIO_TypeDef *) ((0x40000000U + 0x00020000U) + 0x0000U)), 9);
+
+    initAnalogPin(((GPIO_TypeDef *) ((0x40000000U + 0x00020000U) + 0x1400U)), 10);
+}
+
+void outputOn(GPIO_TypeDef *port, uint8_t pin)
 {
     port->ODR &= ~(1U << pin);
 }
 
-void ledOff(GPIO_TypeDef *port, uint8_t pin)
+void outputOff(GPIO_TypeDef *port, uint8_t pin)
 {
     port->ODR |= (1U << pin);
 }
@@ -2383,28 +2726,27 @@ void ledToggle(GPIO_TypeDef *port, uint8_t pin)
     port->ODR ^= (1U << pin);
 }
 
-void allLedsOff(void)
+void updateOutputs(void)
 {
-    ledOff(((GPIO_TypeDef *) ((0x40000000U + 0x00020000U) + 0x0000U)), 3);
-    ledOff(((GPIO_TypeDef *) ((0x40000000U + 0x00020000U) + 0x0000U)), 8);
-    ledOff(((GPIO_TypeDef *) ((0x40000000U + 0x00020000U) + 0x0000U)), 9);
-    ledOff(((GPIO_TypeDef *) ((0x40000000U + 0x00020000U) + 0x0000U)), 10);
-    ledOff(((GPIO_TypeDef *) ((0x40000000U + 0x00020000U) + 0x0400U)), 0);
-    ledOff(((GPIO_TypeDef *) ((0x40000000U + 0x00020000U) + 0x0400U)), 1);
-    ledOff(((GPIO_TypeDef *) ((0x40000000U + 0x00020000U) + 0x0400U)), 8);
-    ledOff(((GPIO_TypeDef *) ((0x40000000U + 0x00020000U) + 0x1400U)), 8);
-}
+    if (lightOutput)
+        outputOn(((GPIO_TypeDef *) ((0x40000000U + 0x00020000U) + 0x0000U)), 9);
+    else
+        outputOff(((GPIO_TypeDef *) ((0x40000000U + 0x00020000U) + 0x0000U)), 9);
 
-void allLedsOn(void)
-{
-    ledOn(((GPIO_TypeDef *) ((0x40000000U + 0x00020000U) + 0x0000U)), 3);
-    ledOn(((GPIO_TypeDef *) ((0x40000000U + 0x00020000U) + 0x0000U)), 8);
-    ledOn(((GPIO_TypeDef *) ((0x40000000U + 0x00020000U) + 0x0000U)), 9);
-    ledOn(((GPIO_TypeDef *) ((0x40000000U + 0x00020000U) + 0x0000U)), 10);
-    ledOn(((GPIO_TypeDef *) ((0x40000000U + 0x00020000U) + 0x0400U)), 0);
-    ledOn(((GPIO_TypeDef *) ((0x40000000U + 0x00020000U) + 0x0400U)), 1);
-    ledOn(((GPIO_TypeDef *) ((0x40000000U + 0x00020000U) + 0x0400U)), 8);
-    ledOn(((GPIO_TypeDef *) ((0x40000000U + 0x00020000U) + 0x1400U)), 8);
+    if (heaterOutput)
+        outputOn(((GPIO_TypeDef *) ((0x40000000U + 0x00020000U) + 0x1400U)), 8);
+    else
+        outputOff(((GPIO_TypeDef *) ((0x40000000U + 0x00020000U) + 0x1400U)), 8);
+
+    if (coolingOutput)
+        outputOn(((GPIO_TypeDef *) ((0x40000000U + 0x00020000U) + 0x0400U)), 8);
+    else
+        outputOff(((GPIO_TypeDef *) ((0x40000000U + 0x00020000U) + 0x0400U)), 8);
+
+    if (fanOutput)
+        outputOn(((GPIO_TypeDef *) ((0x40000000U + 0x00020000U) + 0x0400U)), 1);
+    else
+        outputOff(((GPIO_TypeDef *) ((0x40000000U + 0x00020000U) + 0x0400U)), 1);
 }
 
 
@@ -2413,28 +2755,25 @@ void TIM6_stop(void)
     ((TIM_TypeDef *) (0x40000000U + 0x1000U))->CR1 &= ~1U;
 }
 
-void TIM6_init(uint16_t count)
+void TIM6_initForStatusLogging(void)
 {
-    if (count == 0U)
-    {
-        count = 1U;
-    }
-
-    ((TIM_TypeDef *) (0x40000000U + 0x1000U))->CR1 = 0x0000U;
+    ((TIM_TypeDef *) (0x40000000U + 0x1000U))->CR1 = 0;
     ((TIM_TypeDef *) (0x40000000U + 0x1000U))->PSC = 8399U;
-    ((TIM_TypeDef *) (0x40000000U + 0x1000U))->ARR = count - 1U;
-    ((TIM_TypeDef *) (0x40000000U + 0x1000U))->EGR = 0x0001U;
-    ((TIM_TypeDef *) (0x40000000U + 0x1000U))->SR = 0x0000U;
-    ((TIM_TypeDef *) (0x40000000U + 0x1000U))->CR1 |= 0x0001U;
+    ((TIM_TypeDef *) (0x40000000U + 0x1000U))->ARR = 39999U;
+    ((TIM_TypeDef *) (0x40000000U + 0x1000U))->CNT = 0;
+
+    ((TIM_TypeDef *) (0x40000000U + 0x1000U))->SR &= ~(1U << 0);
+    ((TIM_TypeDef *) (0x40000000U + 0x1000U))->CR1 |= 1U;
 }
 
-uint8_t TIM6_expired(void)
+uint8_t TIM6_has4SecondsPassed(void)
 {
-    if (((TIM_TypeDef *) (0x40000000U + 0x1000U))->SR & 0x0001U)
+    if (((TIM_TypeDef *) (0x40000000U + 0x1000U))->SR & 1U)
     {
-        ((TIM_TypeDef *) (0x40000000U + 0x1000U))->SR &= ~0x0001U;
+        ((TIM_TypeDef *) (0x40000000U + 0x1000U))->SR &= ~(1U << 0);
         return 1U;
     }
+
     return 0U;
 }
 
@@ -2463,8 +2802,12 @@ void USART3_init(void)
     ((USART_TypeDef *) (0x40000000U + 0x4800U))->CR3 = 0x0000U;
 
 
-    ((USART_TypeDef *) (0x40000000U + 0x4800U))->BRR = 0x0540U;
-# 245 "src/main.c"
+    ((USART_TypeDef *) (0x40000000U + 0x4800U))->BRR = 0x02D9U;
+
+    ((USART_TypeDef *) (0x40000000U + 0x4800U))->CR1 |= (1U << 12);
+    ((USART_TypeDef *) (0x40000000U + 0x4800U))->CR1 |= (1U << 10);
+    ((USART_TypeDef *) (0x40000000U + 0x4800U))->CR1 |= (1U << 9);
+
     ((USART_TypeDef *) (0x40000000U + 0x4800U))->CR1 |= (1U << 3) | (1U << 2);
     ((USART_TypeDef *) (0x40000000U + 0x4800U))->CR2 &= ~(0x3U << 12);
     ((USART_TypeDef *) (0x40000000U + 0x4800U))->CR1 |= (1U << 13);
@@ -2497,195 +2840,236 @@ uint8_t USART3_readCharNonBlocking(char *c)
 }
 
 
-uint8_t isValidCommandString(const char *cmd)
+
+void ADC_init(void)
 {
-    return (
-        (strcmp(cmd, "100") == 0) ||
-        (strcmp(cmd, "090") == 0) ||
-        (strcmp(cmd, "080") == 0) ||
-        (strcmp(cmd, "070") == 0) ||
-        (strcmp(cmd, "060") == 0) ||
-        (strcmp(cmd, "050") == 0) ||
-        (strcmp(cmd, "040") == 0) ||
-        (strcmp(cmd, "030") == 0) ||
-        (strcmp(cmd, "020") == 0) ||
-        (strcmp(cmd, "010") == 0) ||
-        (strcmp(cmd, "000") == 0)
-    );
+
+    ((RCC_TypeDef *) ((0x40000000U + 0x00020000U) + 0x3800U))->APB2ENR |= (1U << 10);
+
+
+    initAnalogPin(((GPIO_TypeDef *) ((0x40000000U + 0x00020000U) + 0x1400U)), 10);
+
+
+    ((ADC_Common_TypeDef *) ((0x40000000U + 0x00010000U) + 0x2300U))->CCR &= ~(0x3U << 16);
+    ((ADC_Common_TypeDef *) ((0x40000000U + 0x00010000U) + 0x2300U))->CCR |= (0x1U << 16);
+
+
+
+
+
+    ((ADC_TypeDef *) ((0x40000000U + 0x00010000U) + 0x2200U))->SMPR2 &= ~(0x7U << (8U * 3U));
+    ((ADC_TypeDef *) ((0x40000000U + 0x00010000U) + 0x2200U))->SMPR2 |= (0x6U << (8U * 3U));
+
+
+    ((ADC_TypeDef *) ((0x40000000U + 0x00010000U) + 0x2200U))->SQR1 &= ~(0xFU << 20);
+
+
+    ((ADC_TypeDef *) ((0x40000000U + 0x00010000U) + 0x2200U))->SQR3 &= ~(0x1FU);
+    ((ADC_TypeDef *) ((0x40000000U + 0x00010000U) + 0x2200U))->SQR3 |= 8U;
+
+
+    ((ADC_TypeDef *) ((0x40000000U + 0x00010000U) + 0x2200U))->CR1 &= ~(0x3U << 24);
+    ((ADC_TypeDef *) ((0x40000000U + 0x00010000U) + 0x2200U))->CR2 &= ~(1U << 11);
+
+
+    ((ADC_TypeDef *) ((0x40000000U + 0x00010000U) + 0x2200U))->CR2 |= (1U << 10);
+
+
+    ((ADC_TypeDef *) ((0x40000000U + 0x00010000U) + 0x2200U))->CR2 |= 1U;
 }
 
-void decodeCommand(const char *cmd, uint8_t *mode, uint16_t *flashCount)
+uint16_t ADC_readTemperatureRaw(void)
 {
-    int value = atoi(cmd);
 
-    switch (value)
+    ((ADC_TypeDef *) ((0x40000000U + 0x00010000U) + 0x2200U))->SR &= ~(1U << 1);
+
+
+    ((ADC_TypeDef *) ((0x40000000U + 0x00010000U) + 0x2200U))->CR2 |= (1U << 30);
+
+
+    while ((((ADC_TypeDef *) ((0x40000000U + 0x00010000U) + 0x2200U))->SR & (1U << 1)) == 0U)
     {
-        case 100: *mode = 100; *flashCount = 0; break;
-        case 90: *mode = 90; *flashCount = 6667; break;
-        case 80: *mode = 80; *flashCount = 3333; break;
-        case 70: *mode = 70; *flashCount = 2222; break;
-        case 60: *mode = 60; *flashCount = 1667; break;
-        case 50: *mode = 50; *flashCount = 1333; break;
-        case 40: *mode = 40; *flashCount = 1111; break;
-        case 30: *mode = 30; *flashCount = 952; break;
-        case 20: *mode = 20; *flashCount = 833; break;
-        case 10: *mode = 10; *flashCount = 625; break;
-        case 0: *mode = 0; *flashCount = 0; break;
-        default: *mode = currentMode; *flashCount = currentFlashCount; break;
     }
+
+    return (uint16_t)(((ADC_TypeDef *) ((0x40000000U + 0x00010000U) + 0x2200U))->DR & 0x0FFFU);
 }
 
-
-void UART3_processInput(void)
+float convertAdcToTemperature(uint16_t adcValue)
 {
-    static char rxBuf[4];
-    static uint8_t idx = 0U;
-    static uint8_t discardLine = 0U;
 
-    char c;
 
-    while (USART3_readCharNonBlocking(&c))
-    {
 
-        USART3_writeChar(c);
 
-        if ((c >= '0') && (c <= '9'))
-        {
-            if ((idx < 3U) && (discardLine == 0U))
-            {
-                rxBuf[idx++] = c;
-            }
-            else
-            {
-                discardLine = 1U;
-            }
-        }
-        else if ((c == '\r') || (c == '\n'))
-        {
-            if ((idx == 3U) && (discardLine == 0U))
-            {
-                rxBuf[3] = '\0';
 
-                if (isValidCommandString(rxBuf))
-                {
-                    decodeCommand(rxBuf, (uint8_t *)&pendingMode, (uint16_t *)&pendingFlashCount);
-                    pendingUpdate = 1U;
-                    USART3_writeString("\r\nOK\r\n");
-                }
-                else
-                {
-                    USART3_writeString("\r\nERR\r\n");
-                }
-            }
-            else if ((idx != 0U) || (discardLine != 0U))
-            {
-                USART3_writeString("\r\nERR\r\n");
-            }
 
-            idx = 0U;
-            discardLine = 0U;
-        }
-        else
-        {
-            discardLine = 1U;
-        }
-    }
+
+    return 55.0f - ((85.0f * (float)adcValue) / 4095.0f);
 }
 
 
-void toggleCurrentModeLeds(void)
-{
-    switch (currentMode)
-    {
-        case 90: ledToggle(((GPIO_TypeDef *) ((0x40000000U + 0x00020000U) + 0x0400U)), 0); break;
-        case 80: ledToggle(((GPIO_TypeDef *) ((0x40000000U + 0x00020000U) + 0x0000U)), 10); break;
-        case 70: ledToggle(((GPIO_TypeDef *) ((0x40000000U + 0x00020000U) + 0x0400U)), 1); break;
-        case 60: ledToggle(((GPIO_TypeDef *) ((0x40000000U + 0x00020000U) + 0x0000U)), 9); break;
-        case 50: ledToggle(((GPIO_TypeDef *) ((0x40000000U + 0x00020000U) + 0x0400U)), 8); break;
-        case 40: ledToggle(((GPIO_TypeDef *) ((0x40000000U + 0x00020000U) + 0x0000U)), 8); break;
-        case 30: ledToggle(((GPIO_TypeDef *) ((0x40000000U + 0x00020000U) + 0x1400U)), 8); break;
-        case 20: ledToggle(((GPIO_TypeDef *) ((0x40000000U + 0x00020000U) + 0x0000U)), 3); break;
-        case 10:
-            ledToggle(((GPIO_TypeDef *) ((0x40000000U + 0x00020000U) + 0x0400U)), 0);
-            ledToggle(((GPIO_TypeDef *) ((0x40000000U + 0x00020000U) + 0x0400U)), 1);
-            break;
-        default:
-            break;
-    }
-}
 
-void applyMode(uint8_t mode, uint16_t flashCount)
+void processTemperatureControl(void)
 {
-    currentMode = mode;
-    currentFlashCount = flashCount;
-    flashState = 0U;
-
-    if (mode == 0U)
+# 378 "src/main.c"
+     if (msTicks < uartClimateOverrideUntil)
     {
-        TIM6_stop();
-        allLedsOn();
+        return;
     }
-    else if (mode == 100U)
+
+    if (currentTemperature < 22.0f)
     {
-        TIM6_stop();
-        allLedsOff();
+        heaterOutput = 1;
+        coolingOutput = 0;
+        fanOutput = 1;
+    }
+    else if (currentTemperature > 24.0f)
+    {
+        heaterOutput = 0;
+        coolingOutput = 1;
+        fanOutput = 1;
     }
     else
     {
-        allLedsOff();
-        TIM6_init(flashCount);
+        heaterOutput = 0;
+        coolingOutput = 0;
     }
+}
+
+void processSwitches(void)
+{
+# 420 "src/main.c"
+}
+
+void SysTick_Handler(void)
+{
+    msTicks++;
+}
+
+void processUartReceive(void)
+{
+    static uint8_t waitingForControlByte = 0;
+    char rxChar;
+
+    while (USART3_readCharNonBlocking(&rxChar))
+    {
+        uint8_t rxByte = (uint8_t)rxChar;
+
+        if (waitingForControlByte == 0U)
+        {
+            if (rxByte == 0x26U)
+            {
+                waitingForControlByte = 1U;
+            }
+        }
+        else
+        {
+            waitingForControlByte = 0U;
+# 457 "src/main.c"
+            if ((rxByte & 0xC3U) == 0x40U)
+            {
+                uint8_t uartLight = (rxByte >> 5) & 1U;
+                uint8_t uartHeater = (rxByte >> 4) & 1U;
+                uint8_t uartCooling = (rxByte >> 3) & 1U;
+                uint8_t uartFan = (rxByte >> 2) & 1U;
+
+
+                lightOutput = uartLight;
+
+
+
+
+
+                if ((currentTemperature >= 15.0f) &&
+                    (currentTemperature <= 30.0f))
+                {
+
+
+
+
+                    if (uartHeater && uartCooling)
+                    {
+                        heaterOutput = 0;
+                        coolingOutput = 0;
+                    }
+                    else
+                    {
+                        heaterOutput = uartHeater;
+                        coolingOutput = uartCooling;
+                    }
+
+                    fanOutput = uartFan;
+
+
+                    uartClimateOverrideUntil = msTicks + 10000U;
+                }
+            }
+        }
+    }
+}
+
+void sendHmsStatus(void)
+{
+    char tempString[8];
+    uint8_t statusByte = 0x41U;
+
+    if (lightOutput)
+        statusByte |= (1U << 5);
+
+    if (heaterOutput)
+        statusByte |= (1U << 4);
+
+    if (coolingOutput)
+        statusByte |= (1U << 3);
+
+    if (fanOutput)
+        statusByte |= (1U << 2);
+
+    snprintf(tempString, sizeof(tempString), "%+06.2f", currentTemperature);
+
+    USART3_writeChar((char)0x26);
+    USART3_writeChar((char)0x7E);
+
+    for (uint8_t i = 0; i < 6U; i++)
+    {
+        USART3_writeChar(tempString[i]);
+    }
+
+    USART3_writeChar((char)0x7E);
+    USART3_writeChar((char)statusByte);
+    USART3_writeChar('\r');
+    USART3_writeChar('\n');
 }
 
 
 int main(void)
 {
     RCC_init();
-    ledsInit();
+    GPIO_init();
     USART3_init();
+  SysTick_Config(SystemCoreClock / 1000U);
+    ADC_init();
 
+    outputOff(((GPIO_TypeDef *) ((0x40000000U + 0x00020000U) + 0x0000U)), 9);
+    outputOff(((GPIO_TypeDef *) ((0x40000000U + 0x00020000U) + 0x1400U)), 8);
+    outputOff(((GPIO_TypeDef *) ((0x40000000U + 0x00020000U) + 0x0400U)), 8);
+    outputOff(((GPIO_TypeDef *) ((0x40000000U + 0x00020000U) + 0x0400U)), 1);
 
-    applyMode(0U, 0U);
-
-    USART3_writeString("UART3 ready @ 31250 8N1\r\n");
-    USART3_writeString("Send one of: 000 010 020 030 040 050 060 070 080 090 100\r\n");
+    USART3_writeString("HMS UART3 ready @ 57600 8O1\r\n");
 
     while (1)
     {
-        UART3_processInput();
+        uint16_t adcRaw = ADC_readTemperatureRaw();
+        currentTemperature = convertAdcToTemperature(adcRaw);
 
-        if (TIM6_expired())
+        processSwitches();
+        processUartReceive();
+        processTemperatureControl();
+
+        updateOutputs();
+
+        if (TIM6_has4SecondsPassed())
         {
-
-            if ((currentMode != 0U) && (currentMode != 100U))
-            {
-                toggleCurrentModeLeds();
-
-
-                flashState ^= 1U;
-
-
-
-                if ((pendingUpdate == 1U) && (flashState == 0U))
-                {
-                    applyMode(pendingMode, pendingFlashCount);
-                    pendingUpdate = 0U;
-                }
-            }
-        }
-
-
-        if ((pendingUpdate == 1U) && ((pendingMode == 0U) || (pendingMode == 100U)))
-        {
-            applyMode(pendingMode, pendingFlashCount);
-            pendingUpdate = 0U;
-        }
-
-
-        if ((pendingUpdate == 1U) && ((currentMode == 0U) || (currentMode == 100U)))
-        {
-            applyMode(pendingMode, pendingFlashCount);
-            pendingUpdate = 0U;
+            sendHmsStatus();
         }
     }
-}
+ }
