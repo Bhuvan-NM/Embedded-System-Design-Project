@@ -420,30 +420,27 @@ void processTemperatureControl(void)
     }
 }
 
-    /*
-       TODO:
-       Light switch PA10:
-       - toggle light output
-       - only allow light ON if PA8 indicates room is not already fully lit
-       - minimum press time 10 ms
-       - rising edge detection
-       - 2 second lockout
-
-       Fan switch PB0:
-       - switch fan OFF for 10 seconds
-       - system remains in heating/cooling mode
-       - minimum press time 10 ms
-       - rising edge detection
-       - 2 second lockout
-    */
 
 void processSwitches(void)
+
+        /*  processSwitches — debounce and dispatch the two physical switches.
+            Called every main-loop iteration. Each switch runs an independent
+            four-state FSM keyed off msTicks (1 ms tick): 
+         */ 
+
 {
     uint8_t lightSwitch     = (LIGHT_SWITCH_PORT->IDR >> LIGHT_SWITCH_PIN) & 1U;
     uint8_t fanSwitch       = (FAN_SWITCH_PORT->IDR   >> FAN_SWITCH_PIN)   & 1U;
     uint8_t lightSensor     = (LIGHT_SENSOR_PORT->IDR >> LIGHT_SENSOR_PIN) & 1U;
     
     /* ---------------- Light switch (PA10) ---------------- */
+
+    /*   
+         - toggles lightOutput on rising edge 
+         - ON blocked if PA8 reads low (room already lit)
+         - OFF always allowed
+         - 2 second lockout after press
+    */
     
     switch (lightSwitchState)
     {
@@ -492,6 +489,14 @@ void processSwitches(void)
     }
 
     /* ---------------- Fan switch (PB0) ---------------- */
+
+    /*
+         - forces fanOutput OFF for 10 seconds
+         - heater/cooling logic runs normally
+         - rising edge detection 
+         - 2 second lockout after press
+
+    */
 
     switch (fanSwitchState)
     {
