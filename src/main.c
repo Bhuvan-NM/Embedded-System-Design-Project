@@ -61,6 +61,11 @@ Stduent ID: S4018114, S3896384
 #define TEMP_SENSOR_PORT       GPIOF
 #define TEMP_SENSOR_PIN        10
 
+/* ---------------- Switch FSM states ---------------- */
+#define SWITCH_IDLE       0U
+#define SWITCH_DEBOUNCE   1U
+#define SWITCH_HELD       2U
+#define SWITCH_LOCKOUT    3U
 
 
 /* ---------------- Timer constants ---------------- */
@@ -79,8 +84,17 @@ static volatile uint8_t fanOutput = 0;
 
 static volatile uint32_t msTicks = 0;
 static volatile uint32_t uartClimateOverrideUntil = 0;
+static volatile uint32_t fanAutoOffUntil = 0;
 
 static volatile float currentTemperature = 0.0f;
+
+
+/* ---------------- Switch FSM state ---------------- */
+
+  static volatile uint8_t  lightSwitchState = SWITCH_IDLE;
+  static volatile uint8_t  fanSwitchState    = SWITCH_IDLE;
+  static volatile uint32_t lightSwitchTick  = 0;
+  static volatile uint32_t fanSwitchTick    = 0;
 
 /* ---------------- Utility ---------------- */
 void delayCycles(volatile uint32_t count)
@@ -174,6 +188,11 @@ void ledToggle(GPIO_TypeDef *port, uint8_t pin)
 
 void updateOutputs(void)
 {
+    if (msTicks < fanAutoOffUntil)
+     {
+         fanOutput = 0;
+     }
+
     if (lightOutput)
         outputOn(LIGHT_PORT, LIGHT_PIN);
     else
@@ -396,11 +415,11 @@ void processTemperatureControl(void)
     {
         heaterOutput = 0;
         coolingOutput = 0;
+        //fanOutput     = 1;
+
     }
 }
 
-void processSwitches(void)
-{
     /*
        TODO:
        Light switch PA10:
@@ -417,6 +436,100 @@ void processSwitches(void)
        - rising edge detection
        - 2 second lockout
     */
+
+void processSwitches(void)
+{
+    uint8_t lightSwitch     = (LIGHT_SWITCH_PORT->IDR >> LIGHT_SWITCH_PIN) & 1U;
+    uint8_t fanSwitch       = (FAN_SWITCH_PORT->IDR   >> FAN_SWITCH_PIN)   & 1U;
+    uint8_t lightSensor     = (LIGHT_SENSOR_PORT->IDR >> LIGHT_SENSOR_PIN) & 1U;
+    
+    /* ---------------- Light switch (PA10) ---------------- */
+    
+    switch (lightSwitchState)
+    {
+        case SWITCH_IDLE:
+            if (lightSwitch == 0U)
+            {
+                lightSwitchTick  = msTicks;
+                lightSwitchState = SWITCH_DEBOUNCE;
+            }
+        break;
+    
+        case SWITCH_DEBOUNCE:
+            if (lightSwitch == 1U)
+            {
+                lightSwitchState = SWITCH_IDLE;
+            }
+            else if ((msTicks - lightSwitchTick) >= 10U)
+            {
+                lightSwitchState = SWITCH_HELD;
+            }
+        break;
+
+        case SWITCH_HELD:
+            if (lightSwitch == 1U)
+            {
+                if (lightOutput)
+                {
+                    lightOutput = 0;
+                }
+                else if (lightSensor == 1U)
+                {
+                    lightOutput = 1;
+                }
+    
+                lightSwitchTick  = msTicks;
+                lightSwitchState = SWITCH_LOCKOUT;
+            }
+        break;
+
+        case SWITCH_LOCKOUT:
+            if ((msTicks - lightSwitchTick) >= 2000U)
+            {
+                lightSwitchState = SWITCH_IDLE;
+            }
+        break;
+    }
+
+    /* ---------------- Fan switch (PB0) ---------------- */
+
+    switch (fanSwitchState)
+    {
+        case SWITCH_IDLE:
+            if (fanSwitch == 0U)
+            {
+                fanSwitchTick  = msTicks;
+                fanSwitchState = SWITCH_DEBOUNCE;
+            }
+        break;
+
+        case SWITCH_DEBOUNCE:
+            if (fanSwitch == 1U)
+            {
+                fanSwitchState = SWITCH_IDLE;
+            }
+            else if ((msTicks - fanSwitchTick) >= 10U)
+            {
+                fanSwitchState = SWITCH_HELD;
+            }
+        break;
+
+        case SWITCH_HELD:
+            if (fanSwitch == 1U)
+            {
+                fanAutoOffUntil = msTicks + 10000U;         /* force fan OFF for 10 s */
+                fanSwitchTick  = msTicks;
+                fanSwitchState = SWITCH_LOCKOUT;
+            }
+        break;
+
+        case SWITCH_LOCKOUT:
+            if ((msTicks - fanSwitchTick) >= 2000U)
+            {
+                fanSwitchState = SWITCH_IDLE;
+            }
+        break;
+    }
 }
 
 void SysTick_Handler(void)
